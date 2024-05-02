@@ -14,3 +14,7 @@
 ## groups 
 
 - Verficare a che gruppi appartiene l'utente: `groups <utente>`.
+
+## adduser
+
+- Creare un nuovo utente: `sudo adduser <nome_utente>`
