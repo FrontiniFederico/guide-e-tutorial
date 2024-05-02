@@ -35,6 +35,7 @@ Per comandi più complessi, la pagina del manuale rischia di essere dispersiva. 
 
 ```
 sudo apt install tldr
+# può essere che ti dica che non c'è una directory, nel caso il fix è crearla a mano
 tldr - u
 ```
 
