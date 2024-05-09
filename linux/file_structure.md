@@ -8,3 +8,28 @@ La documentazione ufficiale la trovi direttamente da cli con `man hier` ma è mo
 - `/etc` contiene file di configurazione.
 - `/var` contiene file la cui dimensione è variabile nel tempo. Molto importante è la subdir `/var/log` che contiene appunto i file di logging.
 
+## Cheat sheet basico
+
+| Path          | Description                                |
+|---------------|--------------------------------------------|
+| /             | The Root Directory                         |
+| /bin          | Essential User Binaries                    |
+| /boot         | Static Boot Files                          |
+| /cdrom        | Historical Mount Point for CD-ROMs         |
+| /dev          | Device Files                               |
+| /etc          | Configuration Files                        |
+| /home         | Home Folders                               |
+| /lib          | Essential Shared Libraries                 |
+| /lost+found   | Recovered Files                            |
+| /media        | Removable Media                            |
+| /mnt          | Temporary Mount Points                     |
+| /opt          | Optional Packages                          |
+| /proc         | Kernel & Process Files                     |
+| /root         | Root Home Directory                        |
+| /run          | Application State Files                    |
+| /sbin         | System Administration Binaries             |
+| /selinux      | SELinux Virtual File System                |
+| /srv          | Service Data                               |
+| /tmp          | Temporary Files                            |
+| /usr          | User Binaries & Read-Only Data             |
+| /var          | Variable Data Files                        |
