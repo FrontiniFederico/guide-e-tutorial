@@ -16,4 +16,14 @@ Host <hostname_del_server>
     IdentityFile ~/.ssh/<nome_chiave>
 ```
 
-Ora possiamo accedere più agilmente con il comando `ssh <hostname_del_server>`
+Ora possiamo accedere più agilmente con il comando `ssh <hostname_del_server>`. 
+
+Se lo vogliamo fare a mano o siamo partiti da una coppia di chiavi già presenti sul server:
+
+1. Nel server, ssicuriamoci che la chiave pubblica sia copiata dentro `~/.ssh/authorized_keys`.
+2. Copiamo la chiave privata dal server in `~/.ssh/` nel client.
+3. L'utenza deve avere permessi esclusivi verso la chiave privata:
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+```
