@@ -14,24 +14,4 @@ Questo spreca tempo della CPU e cicli del bus. Una periferica DMA (*direct memor
 
 ![Immagine](immagini/pc_dma.png)
 
-## Dispositivi e drivers
 
-In un dispositivo UNIX esistono due tipi di dispositivi:
-- *cold plug* sono quei dispositivi che devono venire collegati e scollegati soltanto a computer spento. Ad esempio, PCI cards, schede video, porte PCI.
-- *hot plug* sono dispoitivi USB, firewire. Si possono collegare e scollegare a computer accesso.
-
-Possiamo vedere un elenco dei dispositivi PCI collegati col comando `lspci`. L'opzione `-t` ce lo fa vedere con gerarchia. 
-
-```
-federico@FROFED-NB-DELL:~$ lspci
-1ae0:00:00.0 SCSI storage controller: Red Hat, Inc. Virtio console (rev 01)
-38dd:00:00.0 3D controller: Microsoft Corporation Device 008e
-d099:00:00.0 System peripheral: Red Hat, Inc. Virtio file system (rev 01)
-federico@FROFED-NB-DELL:~$ lspci -t
--+-[d099:00]---00.0
- +-[38dd:00]---00.0
- +-[1ae0:00]---00.0
- \-[0000:00]-
-```
-
-Dal kernel 2.6 i device vengono creati dinamicamente. Nella cartelle `/dev` ci sono tutti i device e il servizio `udev` si occupa di gestirli.
